@@ -1,0 +1,10 @@
+microservice:
+  payment-servuce:
+    endpoints:
+      endpoint: 
+            uri: http://PAYMENT-SERVICE/payment/doPayment
+ order-service
+        endpoints:
+      endpoint: 
+            uri: http://ORDER-SERVICE/order/bookOrder
+ 
