@@ -1,19 +1,9 @@
-eureka:
-    client:
-      register-with-eureka: true
-      fetch-registry: true
-      service-url:
-          defaultZone: http://localhost:8761/eureka
-            instance:
-                  hostname: localhost
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/fareuser
+spring.datasource.username=root
+spring.datasource.password=root
+hibernate.dialect = org.hibernate.dialect.MySQLDialect
+hibernate.id.new_generator_mappings = false
+hibernate.show_sql = true 
+hibernate.format_sql = true
 
-microservice:
-  payment-servuce:
-    endpoints:
-      endpoint: 
-            uri: http://PAYMENT-SERVICE/payment/doPayment
- order-service
-        endpoints:
-      endpoint: 
-            uri: http://ORDER-SERVICE/order/bookOrder
- 
